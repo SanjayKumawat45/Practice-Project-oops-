@@ -10,15 +10,15 @@ open class Phone(val brand : String){
             field = value
         }
 
-    protected fun boot(bootLoader : (() -> Unit)? = null){
-        println("$brand phone with RAM:$ram and storage:$storage is booting up")
-
-        if(bootLoader == null){
-            return
-        }
-
-        bootLoader()
-    }
+//    protected fun boot(bootLoader : (() -> Unit)? = null){
+//        println("$brand phone with RAM:$ram and storage:$storage is booting up")
+//
+//        if(bootLoader == null){
+//            return
+//        }
+//
+//        bootLoader()
+//    }
 
 
     protected open fun boot(){
